@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+    <string name="football">Start Soccer</string>
+    <string name="cricket">Cricket</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ground"
+    tools:context=".FootBall">
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textColor="@color/colorWhite"
+        android:text="Football" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_a_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Team A"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-light"
+                />
+            <TextView
+                android:id="@+id/red_card_a_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Red card:1"
+                android:textSize="18sp"
+                android:textColor="@color/colorRed"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:id="@+id/yellow_card_a_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Yellow card:1"
+                android:textSize="18sp"
+                android:textColor="@color/colorYellow"
+                android:fontFamily="sans-serif-medium"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:onClick="addOneForTeamA"
+                android:padding="20dp"
+                android:text="+1 Goal"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:onClick="addOneForTeamAredCard"
+                android:padding="20dp"
+                android:text="Red Card"
+                
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:onClick="addOneForTeamAyellowCard"
+                android:padding="20dp"
+                android:text="Yellow Card"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent">
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_b_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Team B"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:id="@+id/red_card_b_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Red card:1"
+                android:textSize="18sp"
+                android:textColor="@color/colorRed"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:id="@+id/yellow_card_b_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Yellow card:1"
+                android:textSize="18sp"
+                android:textColor="@color/colorYellow"
+                android:fontFamily="sans-serif-medium"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:onClick="addOneForTeamB"
+                android:padding="20dp"
+                android:text="+1 Goal"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:onClick="addOneForTeamBredCard"
+                android:padding="20dp"
+                android:text="Red Card"
+
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:onClick="addOneForTeamByellowCard"
+                android:padding="20dp"
+                android:text="Yellow Card"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScores"
+        android:text="Reset"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+         android:onClick="winner"
+        android:text="Winner"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"/>
+
+
+</LinearLayout>

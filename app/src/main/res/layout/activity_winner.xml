@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounforwinner"
+    android:orientation="vertical"
+    tools:context=".Winner">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="winner name is"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:id="@+id/winnertxt"/>
+
+</LinearLayout>
