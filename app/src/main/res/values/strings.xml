@@ -2,4 +2,22 @@
     <string name="app_name">Score Keeper App</string>
     <string name="football">Start Soccer</string>
     <string name="cricket">Cricket</string>
+    <string name="gametext">Football</string>
+    <string name="team_a">Team A</string>
+    <string name="zeero">0</string>
+    <string name="redzeero">Red Card:0</string>
+    <string name="yellowzeero">Yellow Card:0</string>
+    <string name="goal">+1 Goal</string>
+    <string name="red_card">Red Card</string>
+    <string name="yellow_card">Yellow Card</string>
+    <string name="team_b">Team B</string>
+    <string name="reset">Reset</string>
+    <string name="winner">Winner</string>
+    <string name="footballmain">FOOTBALL</string>
+    <string name="tv1">Please enter team A name</string>
+    <string name="hint1">Example : Team A</string>
+    <string name="tv2">Please enter team B name</string>
+    <string name="hint2">Example : Team B</string>
+    <string name="start">Start</string>
+    <string name="skip">Skip</string>
 </resources>

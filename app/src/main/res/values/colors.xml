@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#297815</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorHintText">#f2f2f2</color>
+    <color name="colorHintText">#aeacac</color>
     <color name="colorTransparent">#90787878</color>
     <color name="colorRed">#ef2719</color>
     <color name="colorYellow">#ffe208</color>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,9 +8,7 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="FOOTBALL"
+                android:text="@string/footballmain"
                 android:textColor="@color/colorWhite"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -31,17 +29,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:textColor="@color/colorWhite"
-                android:text="Please enter team A name" />
+                android:text="@string/tv1" />
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:textColor="@color/colorHintText"
+                android:textColor="@color/colorWhite"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/colorWhite"
-                android:hint="Example : Team A" />
+                android:textColorHint="@color/colorHintText"
+                android:hint="@string/hint1" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -49,30 +47,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:textColor="@color/colorWhite"
-                android:text="Please enter team B name:" />
+                android:text="@string/tv2" />
 
             <EditText
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:textColor="@color/colorHintText"
+                android:textColor="@color/colorWhite"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/colorWhite"
-                android:hint="Example : Team B" />
+                android:textColorHint="@color/colorHintText"
+                android:hint="@string/hint2" />
 
             <Button
-                android:id="@+id/button"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="next"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:background="@color/colorTransparent"
+            android:layout_marginTop="24dp"
+            android:text="@string/start" />
+            <Button
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="next"
+                android:onClick="skip"
                 android:textColor="@color/colorWhite"
                 android:textSize="24sp"
                 android:background="@color/colorTransparent"
                 android:layout_marginTop="24dp"
-                android:text="Start" />
+                android:text="@string/skip" />
         </LinearLayout>
-    </ScrollView>
+
 
 
 

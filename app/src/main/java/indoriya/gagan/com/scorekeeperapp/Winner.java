@@ -13,6 +13,6 @@ public class Winner extends AppCompatActivity {
         TextView tvwinner=findViewById(R.id.winnertxt);
         String team=getIntent().getStringExtra("TEAM").toString();
         String score=getIntent().getStringExtra("SCORE").toString();
-        tvwinner.setText("Congratulations : \n"+team+"\nScore :"+score);
+        tvwinner.setText("Congratulations  \n"+team+"\nScore :"+score);
     }
 }
